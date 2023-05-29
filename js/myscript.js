@@ -20,8 +20,13 @@ const teamMembers = [
     pic: 'barbara-ramos-graphic-designer.jpg',}
 ]
 
-console.log(teamMembers);
+const main = document.querySelector('main');
 
-for (let member in teamMembers){
-    console.log(Object.values(teamMembers[member]));
+for (let i = 0; i<teamMembers.length; i++){
+    const member = teamMembers[i];
+
+    for (info in member){
+        main.innerHTML += '<p>'+info+':'+member[info]+'</p>';
+    }
+    main.innerHTML += '<br>';
 }
