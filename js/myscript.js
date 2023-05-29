@@ -25,5 +25,5 @@ const main = document.querySelector('main');
 for (let i = 0; i<teamMembers.length; i++){
     const member = teamMembers[i];
 
-    main.innerHTML += '<div class="card text-center m-auto" style="width: 18rem;">    <img src="img/'+member.pic+'" class="card-img-top" alt="member pic">    <div class="card-body">        <h5 class="card-title">'+member.name+'</h5>        <p class="card-text">'+member.role+'</p>    </div>    </div>'
+    main.innerHTML += '<div class="card text-center">    <img src="img/'+member.pic+'" class="card-img-top" alt="member pic">    <div class="card-body">        <h5 class="card-title">'+member.name+'</h5>        <p class="card-text">'+member.role+'</p>    </div>    </div>'
 }
