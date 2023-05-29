@@ -25,8 +25,8 @@ const main = document.querySelector('main');
 for (let i = 0; i<teamMembers.length; i++){
     const member = teamMembers[i];
 
-    for (info in member){
-        main.innerHTML += '<p>'+info+':'+member[info]+'</p>';
-    }
+    main.innerHTML += '<p>'+member.name+'</p>';
+    main.innerHTML += '<p>'+member.role+'</p>';
+    main.innerHTML += '<img src="img/'+member.pic+'" alt=""></p>';
     main.innerHTML += '<br>';
 }
