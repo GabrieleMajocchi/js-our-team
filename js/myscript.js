@@ -21,3 +21,7 @@ const teamMembers = [
 ]
 
 console.log(teamMembers);
+
+for (let member in teamMembers){
+    console.log(Object.values(teamMembers[member]));
+}
